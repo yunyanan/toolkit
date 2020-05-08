@@ -1,0 +1,6 @@
+toolkit
+built-in.o
+example/src/*.o
+example/src/*.o.d
+example/src/*/*.o
+example/src/*/*.o.d

@@ -1,11 +1,6 @@
 #include <stdio.h>
-#include "toolkit.h"
-
-TOOLKIT_RESULT_USED
-int toolkit_result_used(int i)
-{
-	return i+1;
-}
+#include <toolkit.h>
+#include <toolkit_common.h>
 
 int main(void)
 {
