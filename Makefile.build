@@ -36,7 +36,7 @@ PHONY += $(subdir-y)
 __build : $(subdir-y) built-in.o
 
 $(subdir-y):
-	$(Q)make -C $@ -f $(TOPDIR)/Makefile.build
+	$(Q)$(MAKE) -C $@ -f $(TOPDIR)/Makefile.build
 
 built-in.o: $(cur_objs) $(subdir_objs)
 	$(Q)echo LD $^
