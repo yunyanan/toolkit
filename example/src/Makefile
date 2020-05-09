@@ -7,3 +7,4 @@ CFLAGS_toolkit.o :=
 
 obj-y += toolkit.o
 obj-y += common/
+obj-y += section/
