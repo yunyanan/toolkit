@@ -1,7 +1,4 @@
 # Makefile
-#
-# TODO:
-#		1. `make single`
 
 ifeq ($(CROSS_COMPILE),)
 # $(error Please initialize the Cross-compilation environment)
@@ -38,8 +35,6 @@ endif
 export AS LD CC CPP AR NM
 export STRIP OBJCOPY OBJDUMP
 
-MAKESINGLE = 1
-
 ifeq ("$(origin V)", "command line")
   VERBOSE = $(V)
 endif
@@ -53,7 +48,7 @@ else
   Q = @
   MAKEFLAGS += --no-print-directory
 endif
-export MAKESINGLE Q VERBOSE
+export Q VERBOSE
 
 TOPDIR = $(shell pwd)
 export TOPDIR

@@ -6,7 +6,6 @@ PHONY += __build
 __build:
 
 obj-y :=
-obj-m :=
 subdir-y :=
 EXTRA_CFLAGS :=
 
