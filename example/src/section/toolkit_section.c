@@ -57,14 +57,14 @@ static int toolkit_section_init3(void)
 
 	return 0;
 }
-TOOLKIT_SECTION_ORDER(toolkit_section3,
-					  toolkit_section_init3,
-					  toolkit_section_exit3);
 
 static void toolkit_section_exit3(void)
 {
 	printf("%s addr %p\n", __func__, toolkit_section_exit3);
 }
+TOOLKIT_SECTION_ORDER(toolkit_section3,
+					  toolkit_section_init3,
+					  toolkit_section_exit3);
 
 void toolkit_section(void)
 {

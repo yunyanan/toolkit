@@ -6,8 +6,12 @@
 
 int main(void)
 {
+	printf("%s start\n", __func__);
+
 	toolkit_common();
 	toolkit_section();
+
+	printf("%s end\n", __func__);
 
 	return 0;
 }
